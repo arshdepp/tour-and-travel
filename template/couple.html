@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>couple tours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/destinations.css'%}">
+</head>
+<body>
+<div class="super_container">
+    <header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href="index.html">fly</a></div>
+							<nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li class="active"><a href="htmlfile.html">Home</a></li>
+									<li><a href="#">services</a></li>
+                                    <li><a href="aboutt">about us</a></li>
+									<li><a href="#">search places</a></li>
+                                    <li><a href="contactus">contact us</a></li>
+                                    {% if user.is_authenticated %}
+				                    <li><a href="logout">logout</a></li>
+				                     {% else %}
+				                    <li><a href="login">login</a></li>
+				                    {% endif %}
+				                    <li><a href="#">Call us: 00-56 445 678 33</a></li>
+								</ul>
+							</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="destination_image"><img src="{%static 'images/ocean.jpg'%}" alt=""></div>
+                 <div class="jumbotron text-center">
+                     <div class="container">
+                         <div class="row">
+                            <h1>Couple tours </h1>
+                          </div>
+                     </div>
+				  </div>
+           <div class="row destinations_row">
+				  <div class="col">
+					<div class="destinations_container item_grid">
+
+                        <center>
+							<div class="destination item">
+							  <div class="destination_image">
+								<img src="{%static 'images/jaipur.jpg'%}" alt="">
+							   </div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">1. Jaipur</a></div>
+								<div class="destination_subtitle"><p>The much-celebrated heaven on earth, Srinagar is the jewel of Kashmir which happens to be the favorite destination of almost everyone in India. Rich in nature, hospitality, and experiences that blends well the amazing weather and the best places to visit in Srinagar.
+									</div>
+								<div class="destination_price">From Rs6000</div>
+								<div class="destination_list">
+									<ul>
+										<li><font color="black">Major Tourist Attractions :</font> Dal Lake, Shalimar Bagh, Tulip Garden, Pari Mahal and Chashme Shahi.</li>
+										<li><font color="black">Best Things To Do :</font> Shikara ride at Dal Lake, Visit the Hazratbal Shrine and Explore the Hari Parbat.</li>
+										<li><font color="black">Best Time To Visit: </font>April to October</li>
+										<li><font color="black">How To Reach: </font>Major airlines like VIstara, AirAsia, Air Srinagar.</li>
+										<li><font color="black">Places To Stay: </font>Asian Park Hotel, Vivanta Dal View, Houseboat on Dal Lake</li>
+										<li><font color="black">Famous Food: </font>Dum Aloo, Kashmiri pulav, Mutton Rogan Josh</li>
+										<li><font color="black">Place to eat at: </font>Ahdoos, Shamyana Restaurant, Nathu Sweets, Mughal Darbar</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+
+								<div class="destination item">
+							      <div class="destination_image">
+								      <img src="{%static 'images/goa.jpg'%}" alt="">
+							       </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">2. Goa</a></div>
+								           <div class="destination_subtitle">Having served as the summer capital of the British era, Shimla in Himachal Pradesh is considered to be the most famous retreats of all the best travel destinations in India. Being the most-sought destinations by all kind of travelers, shopping at Mall Road and relishing the charm of the toy train are few of the best things to do in Shimla which are enjoyed by kids and families alike.
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+										<div class="destination_list">
+									<ul>
+										<li><font color="black">Major Tourist Attractions :</font>  Jakhoo Temple, The Ridge.</li>
+										<li><font color="black">Best Things To Do :</font> Shopping in Mall Road, Enjoy a train rid</li>
+										<li><font color="black">Best Time To Visit: </font>March to June and July to September</li>
+										<li><font color="black">How To Reach: </font>The most convenient way to reach Shimla from Delhi is by driving .</li>
+										<li><font color="black">Places To Stay: </font> Radisson Jass Shimla, Hotel Willow Banks, The Oberoi Cecil</li>
+										<li><font color="black">Famous Food: </font>Chaa Gosht, Himachali Chana Daal, Momos, Baked sweets & goods</li>
+										<li><font color="black">Place to eat at: </font>Eighteen71 Cookhouse & Bar, Cafe Sol, 45 The Central, Hide Out Cafe</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+
+								<div class="destination item">
+							      <div class="destination_image">
+								      <img src="{%static 'images/agra.jpg'%}" alt="">
+							       </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">3. Agra</a></div>
+								           <div class="destination_subtitle">Having served as the summer capital of the British era, Shimla in Himachal Pradesh is considered to be the most famous retreats of all the best travel destinations in India. Being the most-sought destinations by all kind of travelers, shopping at Mall Road and relishing the charm of the toy train are few of the best things to do in Shimla which are enjoyed by kids and families alike.
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+										<div class="destination_list">
+									<ul>
+										<li><font color="black">Major Tourist Attractions :</font>  Jakhoo Temple, The Ridge, Rashtrapati Niwas.</li>
+										<li><font color="black">Best Things To Do :</font> Shopping in Mall Road, Enjoy a train ride </li>
+										<li><font color="black">Best Time To Visit: </font>March to June and July to September</li>
+										<li><font color="black">How To Reach: </font>The most convenient way to reach Shimla .</li>
+										<li><font color="black">Places To Stay: </font> Radisson Jass Shimla, Hotel Willow Banks, The Oberoi Cecil</li>
+										<li><font color="black">Famous Food: </font>Chaa Gosht, Himachali Chana Daal, Momos, Baked sweets & goods</li>
+										<li><font color="black">Place to eat at: </font>Eighteen71 Cookhouse & Bar, Cafe Sol</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+							        	<div class="destination item">
+							      <div class="destination_image">
+								      <img src="{%static 'images/andaman.jpg'%}" alt="">
+							       </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">4. Andaman</a></div>
+								           <div class="destination_subtitle">Having served as the summer capital of the British era, Shimla in Himachal Pradesh is considered to be the most famous retreats of all the best travel destinations in India. Being the most-sought destinations by all kind of travelers, shopping at Mall Road and relishing the charm of the toy train are few of the best things to do in Shimla which are enjoyed by kids and families alike.
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+										<div class="destination_list">
+									<ul>
+										<li><font color="black">Major Tourist Attractions :</font>  Jakhoo Temple, The Ridge, Rashtrapati.</li>
+										<li><font color="black">Best Things To Do :</font> Shopping in Mall Road, Enjoy a train ride from Kalk</li>
+										<li><font color="black">Best Time To Visit: </font>March to June and July to September</li>
+										<li><font color="black">How To Reach: </font>The most convenient way to reach Shimla .</li>
+										<li><font color="black">Places To Stay: </font> Radisson Jass Shimla, Hotel Willow Banks, The Oberoi Cecil</li>
+										<li><font color="black">Famous Food: </font>Chaa Gosht, Himachali Chana Daal, Momos, Baked sweets & goods</li>
+										<li><font color="black">Place to eat at: </font>Eighteen71 Cookhouse & Bar, Cafe Sol, 45 The Central, Hide Out Cafe</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+							        	<div class="destination item">
+							      <div class="destination_image">
+								      <img src="{%static 'images/Auli.jpg'%}" alt="">
+							       </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">5. Auli</a></div>
+								           <div class="destination_subtitle">Having served as the summer capital of the British era, Shimla in Himachal Pradesh is considered to be the most famous retreats of all the best travel destinations in India. Being the most-sought destinations by all kind of travelers, shopping at Mall Road and relishing the charm of the toy train are few of the best things to do in Shimla which are enjoyed by kids and families alike.
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+										<div class="destination_list">
+									<ul>
+										<li><font color="black">Major Tourist Attractions :</font>  Jakhoo Temple, The Ridge, Rashtrapati Ni.</li>
+										<li><font color="black">Best Things To Do :</font> Shopping in Mall Road, Enjoy a train ride from Kalka to Shiml</li>
+										<li><font color="black">Best Time To Visit: </font>March to June and July to September</li>
+										<li><font color="black">How To Reach: </font>The most convenient way to reach .</li>
+										<li><font color="black">Places To Stay: </font> Radisson Jass Shimla, Hotel Willow Banks, The Oberoi Cecil</li>
+										<li><font color="black">Famous Food: </font>Chaa Gosht, Himachali Chana Daal, Momos, Baked sweets & goods</li>
+										<li><font color="black">Place to eat at: </font>Eighteen71 Cookhouse & Bar, Cafe Sol, </li>
+									</ul>
+								</div>
+							</div>
+							</div>
+							       	<div class="destination item">
+							      <div class="destination_image">
+								      <img src="{%static 'images/Leh And Ladakh.jpg'%}" alt="">
+							       </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">6.Leh And Ladakh</a></div>
+								           <div class="destination_subtitle">Having served as the summer capital of the British era, Shimla in Himachal Pradesh is considered to be the most famous retreats of all the best travel destinations in India. Being the most-sought destinations by all kind of travelers, shopping at Mall Road and relishing the charm of the toy train are few of the best things to do in Shimla which are enjoyed by kids and families alike.
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+										<div class="destination_list">
+									<ul>
+										<li><font color="black">Major Tourist Attractions :</font>  Jakhoo Temple, The Ridge.</li>
+										<li><font color="black">Best Things To Do :</font> Shopping in Mall Road, Enjoy a trai</li>
+										<li><font color="black">Best Time To Visit: </font>March to June and July to September</li>
+										<li><font color="black">How To Reach: </font>The most convenient way .</li>
+										<li><font color="black">Places To Stay: </font> Radisson Jass Shimla, Hotel Willow Banks, The Oberoi Cecil</li>
+										<li><font color="black">Famous Food: </font>Chaa Gosht, Himachali Chana Daal, Momos, Baked sweets & goods</li>
+										<li><font color="black">Place to eat at: </font>Eighteen71 Cookhouse & Bar, Cafe Sol, 45 The Central, Hide Out Cafe</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</center>
+					  </div>
+					  <div class="row load_more_row">
+				      <div class="col">
+					  <div class="button load_more_button"><a href="#">load more</a></div>
+				     </div>
+			        </div>
+				  </div>
+		   </div>
+
+	<footer class="footer">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{%static 'images/footer_1.jpg'%}" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="newsletter">
+						<div class="newsletter_title_container text-center">
+							<!--
+							<div class="newsletter_title">Subscribe to our newsletter to get the latest trends & news</div>
+							<div class="newsletter_subtitle">Join our database NOW!</div>
+						</div>
+						<div class="newsletter_form_container">
+							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
+								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
+									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>
+									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
+								</div>
+								<div><button class="newsletter_button">subscribe</button></div>
+							</form>
+						</div>
+						<-->
+					</div>
+				</div>
+			</div>
+			<div class="row footer_contact_row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{%static 'images/sign.svg'%}" alt=""></div>
+								<div class="footer_contact_title">give us a call</div>
+								<div class="footer_contact_list">
+									<ul>
+										<li>Office Landline: +44 5567 32 664 567</li>
+										<li>Mobile: +91 9876543210</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{%static 'images/trekking.svg'%}" alt=""></div>
+								<div class="footer_contact_title">come & drop by</div>
+								<div class="footer_contact_list">
+									<ul style="max-width:190px">
+										<li>34 sector,chandigarh, punjab</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{%static 'images/around.svg'%}" alt=""></div>
+								<div class="footer_contact_title">send us a message</div>
+								<div class="footer_contact_list">
+									<ul>
+										<li>kaursandhu4411@gmail.com</li>
+										<li>Office@yourbusinessname.com</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</footer>
+</div>
+<script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js'%}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js'%}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js'%}"></script>
+<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js'%}"></script>
+<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js'%}"></script>
+<script src="{% static 'plugins/easing/easing.js'%}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+</body>
+</html>

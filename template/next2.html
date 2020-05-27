@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>page3</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="{% static 'styles/bootstrap4/bootstrapcar.min.css'%}" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{% static 'styles/train.css'%}" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+<div class="background_image" style="background-image:url({% static 'images/car.jpg' %})"></div>
+
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">s
+							<h1>bank details</h1>
+						</div>
+						<form action="" method="post">
+							{% csrf_token %}>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">mobile number</span>
+										<input class="form-control" type="text" name="mobile">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">alternative mobile number</span>
+										<input class="form-control" type="text" name="alternative_mobile" placeholder="for communication purpose">
+									</div>
+								</div>
+							</div>
+                            <div class="form-group">
+								<span class="form-label">email id</span>
+								<input class="form-control" type="email" name="email" placeholder="email address">
+							</div>
+                            <div class="form-group">
+								<span class="form-label">account holder name</span>
+								<input class="form-control" type="text" name="account_holdername" placeholder="for refund and cash back received">
+							</div>
+                             <div class="form-group">
+								<span class="form-label">account number</span>
+								<input class="form-control" type="text" name="account_number">
+							</div>
+                            <div class="form-group">
+								<span class="form-label">branch name</span>
+								<input class="form-control" type="text" name="branch_name">
+							</div>
+                            <div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">by wallet</span>
+										<input class="form-control" type="text" name="wallet" placeholder="name of wallet">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">mobile number</span>
+										<input class="form-control" type="text" name="phone">
+									</div>
+								</div>
+							</div>
+								<div class="row">
+							     <div class="form-btn">
+								<center>
+								<button class="submit-btn">pay now</button>
+								</center>
+							     </div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

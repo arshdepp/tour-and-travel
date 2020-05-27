@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="30534a57-d223-485f-b3a8-62e4edeab3f0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Yh4TBN0ArCHPGTKU3OdoJFr1Bc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/styles" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pychamproject\batch1\static\styles" />
+      <recent name="D:\pychamproject\batch1\template" />
+      <recent name="D:\pychamproject\batch1\static\images" />
+      <recent name="D:\pychamproject\batch1\static\js" />
+      <recent name="D:\pychamproject\batch1\static\styles\bootstrap4" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pychamproject\batch1\flyo" />
+      <recent name="D:\pychamproject\batch1\statics\style" />
+      <recent name="D:\pychamproject\batch1\statics\image" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="30534a57-d223-485f-b3a8-62e4edeab3f0" name="Default Changelist" comment="" />
+      <created>1583381497522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583381497522</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="293" y="25" key="#Inspections" timestamp="1590393410036">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="293" y="25" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1590393410036" />
+    <state x="275" y="25" key="#Intentions" timestamp="1588510104021">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="25" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1588510104021" />
+    <state x="46" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585824055551">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="46" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585824055551" />
+    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587960690745">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587960690745" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1590212294547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1590212294547" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1590557936521">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590557936521" />
+    <state x="400" y="-23" width="672" height="678" key="search.everywhere.popup" timestamp="1587548784034">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="400" y="-23" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1587548784034" />
+  </component>
+</project>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>waterparks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,shrink-to-fit=no">
+   	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/destinations.css'%}">
+
+</head>
+<body>
+<!--navbar-->
+<div class="super_container">
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href="htmlfile.html">fly</a></div>
+							 <nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li class="active"><a href="home">Home</a></li>
+									<li><a href="aboutt">About us</a></li>
+									<li><a href="reservations">bookings</a></li>
+									<li><a href="contactus">Contact</a></li>
+                                    {% if user.is_authenticated %}
+                                    <li><a href="logout">logout</a></li>
+                                    {% else %}
+                                    <li><a href="login">login</a></li>
+                                    {% endif %}
+									<li><a href="#">{{user}}</a> </li>
+									<li><a href="#">{{user.email}}</a> </li>
+									<li><a href="#" >Callus:00-56 445 678 33</a></li>
+								</ul>
+							  </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="destination_image"><img src="{%static 'images/waterp.jpg'%}" alt=""></div>
+
+                 <div class="jumbotron text-center">
+                     <div class="container">
+                         <div class="row">
+                            <h1>Waterparks</h1>
+                          </div>
+                     </div>
+				  </div>
+
+	 <center>
+			<form >
+             <input type="text" class="search_input search_input_1" name="search" placeholder="City" required="required">
+             <input type="text" class="search_input search_input_4" name="search" placeholder="Budget" required="required">
+			 <button class="home_search_button">search</button>
+			</form>
+        </center>
+           <div class="row destinations_row">
+				  <div class="col">
+					<div class="destinations_container item_grid">
+
+                        <center>
+							{% for i in w %}
+							<div class="destination item">
+							  <div class="destination_image">
+								<img src="{{i.Picture.url}}" alt="">
+							   </div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">{{i.name_of_destination}}</a></div>
+								<div class="destination_subtitle"><p>{{i.description}}</div>
+								<div class="destination_price">Rs{{i.price}}</div>
+								<!--
+								<div class="destination_list">
+									<ul>
+										<li><font color="black">Major Tourist Attractions :</font> Dal Lake, Shalimar Bagh, Tulip Garden, Pari Mahal and Chashme Shahi.</li>
+										<li><font color="black">Best Things To Do :</font> Shikara ride at Dal Lake, Visit the Hazratbal Shrine and Explore the Hari Parbat.</li>
+										<li><font color="black">Best Time To Visit: </font>April to October</li>
+										<li><font color="black">How To Reach: </font>Major airlines like VIstara, AirAsia, Air India, SpiceJet have flights on Delhi-Srinagar route,You could also take a train from New Delhi to Jammu and make your way to Srinagar.</li>
+										<li><font color="black">Places To Stay: </font>Asian Park Hotel, Vivanta Dal View, Houseboat on Dal Lake</li>
+										<li><font color="black">Famous Food: </font>Dum Aloo, Kashmiri pulav, Mutton Rogan Josh</li>
+										<li><font color="black">Place to eat at: </font>Ahdoos, Shamyana Restaurant, Nathu Sweets, Mughal Darbar</li>
+									</ul>
+								</div>
+								<-->
+							</div>
+							</div>
+							{% endfor %}
+						</center>
+					</div>
+				  </div>
+		   </div>
+<!--
+
+					  </div>
+
+
+					  <div class="row load_more_row">
+				      <div class="col">
+					  <div class="button load_more_button"><a href="#">load more</a></div>
+				     </div>
+			        </div>
+						</center>
+					</div>
+				  </div>
+				  <-->
+
+</div>
+<script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js'%}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js'%}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js'%}"></script>
+<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js'%}"></script>
+<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js'%}"></script>
+<script src="{% static 'plugins/easing/easing.js'%}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<!--
+{% for i in emp %}
+<a href="{% url 'details' pk=i.pk %}"><h2>{{i.pk}}{{i.firstname}}</h2></a>
+    {% endfor %}
+    <-->
+<body>
+{% if user.is_authenticated %}
+<a href="logout">logout</a>
+<h2>hi! this is special offer to u mr/ms. {{user.first_name}}
+    <h2>this is my homepage</h2>
+{% else %}
+    <a href="login">login</a><br>
+    <h2>this is my homepage</h2>
+    {% endif %}
+</body>
+</html>

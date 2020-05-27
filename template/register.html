@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/signup.css' %}">
+</head>
+<body>
+<div class="background_image" style="background-image:url({% static 'images/footer_1.jpg' %})"></div>
+<div class="signup-box">
+    <h1>Register</h1>
+    <form action="register" method="post">
+
+    <div class="textbox">
+    {% csrf_token %}
+    <i class="fa fa-user" aria-hidden="true"></i>
+    <input type="text" placeholder="firstname" name="firstname" value=""><br>
+    </div>
+
+      <div class="textbox">
+    <input type="text" name="lastname" placeholder="lastname"><br>
+      </div>
+
+          <div class="textbox">
+    <input type="text" name="username" placeholder="username"><br>
+          </div>
+
+               <div class="textbox">
+    <input type="email" name="email" placeholder="email"><br>
+               </div>
+
+           <div class="textbox">
+    <input type="password" name="password1" placeholder="password"><br>
+           </div>
+
+               <div class="textbox">
+    <input type="password" name="password2" placeholder="confirm password"><br>
+               </div>
+
+               <div class="textbox">
+    <input type="text" name="gender" placeholder="gender"><br>
+               </div>
+
+               <div class="textbox">
+    <input type="text" name="Date_Of_Birth" placeholder="Date_Of_Birth"><br>
+               </div>
+
+               <div class="textbox">
+    <input type="text" name="mobile_number" placeholder="mobile_number"><br>
+               </div>
+
+    <input class="btn" type="submit" name="" value="sign up">
+
+     </form>
+
+</div>
+<div>
+    {% for message in messages %}
+    <h3>{{messages}}</h3>
+    {% endfor %}
+
+</div>
+
+</body>
+</html>

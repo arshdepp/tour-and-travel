@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+    <link rel="stylesheet" type="{% static 'text/css" href="styles/about_responsive.css'%}">
+</head>
+<body>
+<div class="super_container">
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href="htmlfile.html">fly</a></div>
+							 <nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li class="active"><a href="home">Home</a></li>
+									<li><a href="aboutt">About us</a></li>
+									<li><a href="reservations">bookings</a></li>
+									<li><a href="contactus">Contact</a></li>
+                                    {% if user.is_authenticated %}
+                                    <li><a href="logout">logout</a></li>
+                                    {% else %}
+                                    <li><a href="login">login</a></li><br>
+                                    {% endif %}
+									<li><a href="#">{{user}}</a> </li>
+									<li><a href="#">{{user.email}}</a> </li>
+									<li><a href="#" >Callus:00-56 445 678 33</a></li>
+								</ul>
+							  </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="about_image"><img src="{% static 'images/tours.jpg'%}" alt=""></div>
+    <div class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+                    <center>
+					<div class="section_title"><h2>A few words about us</h2></div>
+                    </center>
+				</div>
+			</div>
+			<div class="row about_row">
+					<div class="about_content">
+                        <center>
+                              <div class="text_highlight">this site is for people who want to explore the world. we make easier for the customer to book tour online and buy their tickets easily without facing any problem.</div>
+						       <div class="about_text">
+
+							   <p>This site is userfriendly .customer will get to know more about tour places.In case customer find it difficult to use this site,they can call us or email us on given number.</p>
+                                <p>we will happy to help youwith your problem.you can book ticket of bus ,car,train and flight also. in case of any query you can contact us ,we are 24*7hrs avialiable for youto help</p>
+                               </div>
+                            </center>
+                        </div>
+                    </div>
+				</div>
+			</div>
+        </div>
+<center>
+
+    <div class="jumbotron text-center">
+    <div><font color="black" size="48">Speciality of our site</font></div>
+     </div>
+</center>
+<div class="why">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/why.jpg'%}" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_subtitle">simply amazing places</div>
+					<div class="section_title"><h2>Why choose us?</h2></div>
+				</div>
+			</div>
+			<div class="row why_row">
+
+				<!-- Why item -->
+				<div class="col-lg-4 why_col">
+					<div class="why_item">
+						<div class="why_image">
+
+							<div class="why_icon d-flex flex-column align-items-center justify-content-center">
+
+							</div>
+						</div>
+						<div class="why_content text-center">
+							<div class="why_title">Fast Services</div>
+							<div class="why_text">
+								<p>this site help you to provide fast services.we will not waste your time by doing fake claims.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Why item -->
+				<div class="col-lg-4 why_col">
+					<div class="why_item">
+						<div class="why_image">
+
+							<div class="why_icon d-flex flex-column align-items-center justify-content-center">
+
+							</div>
+						</div>
+						<div class="why_content text-center">
+							<div class="why_title">Great Team</div>
+							<div class="why_text">
+								<p>our team will always avaliable for you to provide best service,so that you will enjoy your tour.our team is of 4 members,you can contact us in case of any problem our team members will be there to help you.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Why item -->
+				<div class="col-lg-4 why_col">
+					<div class="why_item">
+						<div class="why_image">
+
+							<div class="why_icon d-flex flex-column align-items-center justify-content-center">
+
+							</div>
+						</div>
+						<div class="why_content text-center">
+							<div class="why_title">Best Deals</div>
+							<div class="why_text">
+								<p>we promise you to provide best deals for your tour.we will provide you deals according to your budgets.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="team">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_subtitle">simply amazing places</div>
+					<div class="section_title"><h2>Meet the Team</h2></div>
+				</div>
+			</div>
+			<div class="row team_row">
+
+				<!-- Team Item -->
+				<div class="col-xl-3 col-md-6 team_col">
+					<div class="team_item d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="team_image"><img src="{% static 'images/team_1.jpg'%}" alt=""></div>
+						<div class="team_content">
+							<div class="team_title"><a href="#">Arshdeep kaur</a></div>
+							<div class="team_text">
+								<p>Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo. Vivamus massa.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Item -->
+				<div class="col-xl-3 col-md-6 team_col">
+					<div class="team_item d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="team_image"><img src="{% static 'images/team_2.jpg'%}" alt=""></div>
+						<div class="team_content">
+							<div class="team_title"><a href="#">Rashpal singh </a></div>
+							<div class="team_text">
+								<p>Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo. Vivamus massa.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Item -->
+				<div class="col-xl-3 col-md-6 team_col">
+					<div class="team_item d-flex flex-column align-items-center justify-content-start text-center">
+						<div class="team_image"><img src="{% static 'images/team_4.jpg'%}" alt=""></div>
+						<div class="team_content">
+							<div class="team_title"><a href="#">inder singh</a></div>
+							<div class="team_text">
+								<p>Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo. Vivamus massa.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<footer class="footer">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{%static 'images/footer_1.jpg'%}" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="newsletter">
+						<div class="newsletter_title_container text-center">
+							<!--
+							<div class="newsletter_title">Subscribe to our newsletter to get the latest trends & news</div>
+							<div class="newsletter_subtitle">Join our database NOW!</div>
+						</div>
+						<div class="newsletter_form_container">
+							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
+								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
+									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>
+									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
+								</div>
+								<div><button class="newsletter_button">subscribe</button></div>
+							</form>
+						</div>
+						<-->
+					</div>
+				</div>
+			</div>
+			<div class="row footer_contact_row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{%static 'images/sign.svg'%}" alt=""></div>
+								<div class="footer_contact_title">give us a call</div>
+								<div class="footer_contact_list">
+									<ul>
+										<li>Office Landline: +44 5567 32 664 567</li>
+										<li>Mobile: +91 9876543210</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{%static 'images/trekking.svg'%}" alt=""></div>
+								<div class="footer_contact_title">come & drop by</div>
+								<div class="footer_contact_list">
+									<ul style="max-width:190px">
+										<li>34 sector,chandigarh, punjab</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{%static 'images/around.svg'%}" alt=""></div>
+								<div class="footer_contact_title">send us a message</div>
+								<div class="footer_contact_list">
+									<ul>
+										<li>kaursandhu4411@gmail.com</li>
+										<li>Office@yourbusinessname.com</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		   </div>
+		</div>
+	</footer>
+
+<script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js'%}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js'%}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js'%}"></script>
+<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js'%}"></script>
+<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js'%}"></script>
+<script src="{% static 'plugins/easing/easing.js'%}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+</body>
+</html>
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>fly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/destinations.css'%}">
+
+</head>
+<body>
+
+
+<div class="super_container">
+   <header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href="index.html">fly</a></div>
+							<nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li class="active"><a href="html.html">Home</a></li>
+								      <li><a href="#">services</a></li>
+                                      <li><a href="aboutt">about us</a></li>
+                                      <li><a href="reservations">bookings</a></li>
+                                      <li><a href="contactus">contact us</a></li>
+                                      {% if user.is_authenticated %}
+				                      <li><a href="logout">logout</a></li>
+				                      {% else %}
+				                      <li><a href="login">login</a></li>
+				                       {% endif %}
+									   <li><a href="#">{{user}}</a> </li>
+									   <li><a href="#">{{user.email}}</a> </li>
+				                      <li><a href="#">Call us: 00-56 445 678 33</a></li>
+								</ul>
+							</nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<div class="destination_image"><img src="{%static 'images/religious (2).jpg'%}" alt=""></div>
+
+<!--
+<div class="destination item">
+   <div class="destination_image">
+	  <img src="images/des1.jpg" alt="">
+   </div>
+</div>
+<-->
+                 <div class="jumbotron text-center">
+                     <div class="container">
+                         <div class="row">
+                            <h1>RELIGIOUS TOURS</h1>
+                          </div>
+                     </div>
+				  </div>
+           <div class="row destinations_row">
+				  <div class="col">
+					<div class="destinations_container item_grid">
+
+                        <center>
+							<div class="destination item">
+							  <div class="destination_image">
+								<img src="{%static 'images/na1.jpg'%}" alt="">
+							   </div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="#">1.Vaishno Devi Temple,Jammu Kashmir</a></div>
+								<div class="destination_subtitle"><p>From high up in the mountains, Mata Vaishno Devi calls out to her devotees… Situated on the Trikuta Hills in Jammu, the abode of Mata Vaishno is amongst the most popular pilgrimage in India. Experience an indescribable delight in taking an arduous trek that further leads to the caves where the goddess presides over and bestows countless blessings. Beautiful landscape, pervading divinity and thrilling.
+									</div>
+								<div class="destination_price">From Rs6000</div>
+
+							</div>
+							</div>
+
+								<div class="destination item">
+							      <div class="destination_image">
+								      <img src="{%static 'images/na2.jpg'%}" alt="">
+							       </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">2.Golden Temple/Harmandir Sahib</a></div>
+								           <div class="destination_subtitle">The unparalleled reflection of the pious golden edifice on the ambrosial nectar (lake) and the horde of pilgrims loitering in the shrine complex urge one to visit this popular religious place in India. Built by the fourth Sikh Guru- Ramdass Sahib Ji, Gurdwara Harmandir Sahib is the most important Sikh pilgrimage site to visit in India. The golden gilded temple commemorates a number of Sikh historical events. A bringer of peace, the Golden Temple is nothing short of a legacy in India.
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+
+									</div>
+								</div>
+
+								<div class="destination item">
+							      <div class="destination_image">
+								      <img src="{%static 'images/na3.jpg'%}" alt="">
+							       </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">3.Sun Temple (Surya Mandir) in Konark</a></div>
+								           <div class="destination_subtitle">The masterpiece of Indian architecture, Sun Temple is the epitome of exquisite architecture and unmatched spirituality. Situated in Konark, Odisha, the Sun Temple boasts of a massive size and is an incredible example of genius. The Sun God sitting on a majestic chariot depicts the victory of King Narsimhadeva I (who defeated a number of Muslim invaders). The incredible architecture that includes 12 pairs of carved wheels, hall of offering.
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+
+							         </div>
+							      </div>
+							        	<div class="destination item">
+							      <div class="destination_image">
+								      <img src="{%static 'images/na4.jpg'%}" alt="">
+							       </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">4.Jagannath Temple (Jagannath Mandir)</a></div>
+								           <div class="destination_subtitle">An important pilgrimage in India, Jagannath Temple is the finest monument in Odisha. The main deities presiding over the temple are Lord Jagannath, Balabhadra and Goddess Subhadra. Although a popular pilgrimage, Jagannath Temple comes to life during the annual Rath Yatra when a very large number of people throng the temple. The sacred shrine is believed to be the authentic reflection of Indian culture..
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+
+							            </div>
+							         </div>
+							        	<div class="destination item">
+							      <div class="destination_image">
+								      <img src="{%static 'images/na5.jpg'%}" alt="">
+							       </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">5.Somnath Jyotirlinga, Gujarat</a></div>
+								           <div class="destination_subtitle">Reckoned to be the first Dwadash Jyotirlinga (Pillar of Light) of Lord Shiva, Somnath Jyotirlinga in Gujarat holds an important place in India. The survivor of many attacks in the past, Somnath Jyotirlinga has been a source of divinity and spirituality for many Hindu pilgrims. Situated on the shores of Arabian Sea, this sacred shrine calls out to devotees from afar and blesses innumerable times. Feel the power of spirituality and lose yourself in the devotion at this holy place in India..
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+
+							            </div>
+							         </div>
+							       	<div class="destination item">
+							           <div class="destination_image">
+										   <img src="{%static 'images/na6.jpg'%}" alt="">
+							            </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">6. Ranakpur Temple</a></div>
+								           <div class="destination_subtitle">Humility is the greatest virtue and Jainism preaches just that! Situated in Ranakpur village in Rajasthan, Ranakpur is one of the best places of Indian pilgrimage tourism. The Ranakpur temple is one of the oldest Jain temples in India and thus holds a lot of importance for devotees. Pilgrims from all over the world pay a visit to this temple that has majestic architecture and beautiful surroundings. Imbue yourself in the tranquil ambiance here and you shall definitely seek divinity that does not match anything ordinary.
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+
+							</div>
+							</div>
+
+								<div class="destination item">
+							           <div class="destination_image">
+										   <img src="{%static 'images/na7.jpg'%}" alt="">
+							            </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">7.Tirumala Venkateswara Temple in Tirupati</a></div>
+								           <div class="destination_subtitle">The earthly abode of Lord Venkateswara (incarnation of Vishnu), Tirumala Venkateswara Temple is situated on the last hill of the Seshachalam range in Tirupati, Andhra Pradesh. Like many temples in south India, this holy temple is known for its exquisite architecture. It is also amongst the most visited Hindu temples in India as it is said that the temple attracts 60,000 pilgrims each day. One must attend the Puja that is accompanied by many hymns and praises giving it a touch of unmatched divinity. The Laddoo Prasadam is yet another attraction of Tirumala Venkateswara Temple..
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+
+							</div>
+							</div>
+								<div class="destination item">
+							           <div class="destination_image">
+										   <img src="{%static 'images/na8.jpg'%}" alt="">
+							            </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">8.Hemkund Sahib</a></div>
+								           <div class="destination_subtitle">Situated in one of the most scenic locations in the country, Hemkund Sahib adds charm to religious tour in India. Unlike other Sikh pilgrimages in India, Hemkund Sahib has a pentagonal structure. The scenic beauty of the place is worth mentioning as this shrine is nestled amidst lofty hills that are covered with snow. One shall be stunned with the kind of devotion that the pilgrims show here despite the adverse climatic conditions. The spiritual ambiance at Hemkunt Sahib may pursue you to stay a bit longer here.
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+
+							</div>
+							</div>
+
+								<div class="destination item">
+							           <div class="destination_image">
+										   <img src="{%static 'images/na9.jpg'%}" alt="">
+							            </div>
+							        <div class="destination_content">
+								       <div class="destination_title"><a href="#">9.Dargah Gharib Nawaz in Ajmer</a></div>
+								           <div class="destination_subtitle">Khwaja Moinuddin Chishti lay in peace here, listening to people’s wishes and fulfilling them. Once you enter through the gate of the Dargah, a queer peace takes over you. A sacred shrine in Ajmer, Gharib Nawaz Dargah Sharif is visited by millions of devotees every year from all over the world. The Dargah for many reasons captivates one’s heart; there is certainly something that is magical about this place that people from different faith come and worship here. Although the dargah is always crowded, the best time to visit Ajmer Sharif is during the Urs festival. The place comes to life during this festival that is held annually
+									       </div>
+								                 <div class="destination_price">From Rs6000</div>
+
+							</div>
+							</div>
+						</center>
+					  </div>
+					  <div class="row load_more_row">
+				      <div class="col">
+					  <div class="button load_more_button"><a href="#">load more</a></div>
+				     </div>
+			        </div>
+				  </div>
+		   </div>
+</div>
+<script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js'%}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js'%}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js'%}"></script>
+<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js'%}"></script>
+<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js'%}"></script>
+<script src="{% static 'plugins/easing/easing.js'%}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js'%}"></script>
+<script src="{% static 'js/custom.js'%}"></script>
+</body>
+</html>
